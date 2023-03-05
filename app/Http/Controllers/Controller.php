@@ -43,8 +43,6 @@ class Controller extends BaseController
         $extractedImg = [];
         $i = 0;
 
-        //var_dump($img);
-
         foreach($date as $dat)
         {
             $extractedDate[] = $dat->textContent;
@@ -88,7 +86,6 @@ class Controller extends BaseController
         $post_right = ParsBase::orderBy('text')->limit(10)->paginate(10);
         $img = ParsBase::where('img')->get('img');
         $j = 0;
-        
 
         return view('home', ['post_l' => $post, 'post_r' => $post_right, 'j' => $j, 'img' => $img]);
     }
