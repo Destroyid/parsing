@@ -40,7 +40,7 @@ class Controller extends BaseController
         $img = $doc->filter('.card-big__image')->attr('src');
         $extracted = [];
         $extractedDate = [];
-        $extractedImg = [];
+        // $extractedImg = [];
         $i = 0;
 
         foreach($date as $dat)
